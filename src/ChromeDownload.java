@@ -43,7 +43,9 @@ public class ChromeDownload {
 	@Test
 	public void DownloadFile(){
 		File listfiles[]=folder.listFiles();
+		//make sure the directory is not empty
 		Assert.assertTrue(listfiles.length>0);
+		//make sure that downloaded file is not empty
 		for(File file:listfiles){
 		Assert.assertTrue(file.length()>0);	
 		}
